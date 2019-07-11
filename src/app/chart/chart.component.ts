@@ -65,7 +65,13 @@ export class ChartComponent implements OnInit {
           title: {
             text: 'spend'
           }
-        }]
+        }],
+         plotLines: [{
+    color: 'red', // Color value
+    dashStyle: 'longdashdot', // Style of the plot line. Default to solid
+    value: 3, // Value of where the line will appear
+    width: 2 // Width of the line    
+  }]
       }
 
     this.drawChart()
