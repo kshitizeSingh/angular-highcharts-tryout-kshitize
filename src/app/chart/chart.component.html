@@ -1,0 +1,19 @@
+
+<div [chart]="chart"></div>
+y1<select [(ngModel)]="y1" (ngModelChange)="onAxisChange('y1')">
+  <option value="profit_i">profit</option>
+  <option value="demand_i">demand</option>
+  <option value="order_i">order</option>
+</select>
+y2<select [(ngModel)]="y2" (ngModelChange)="onAxisChange('y2')">
+  <option value="profit_i">profit</option>
+  <option value="demand_i">demand</option>
+  <option value="order_i">order</option>
+</select>
+y3<select [(ngModel)]="y3" (ngModelChange)="onAxisChange('y3')">
+  <option value="roas_i">ROAS_i</option>
+  <option value="cpa_i">CPA_i</option>
+
+</select>
+
+<button (click)="createNewChart()"></button>
